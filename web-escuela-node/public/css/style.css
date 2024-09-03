@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('../font/Helvetica.woff') format('woff');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('../font/Helvetica-Bold.woff') format('woff');
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.helve-bold {
+  font-family: "Helvetica", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.helve-regular-italic {
+  font-family: "Helvetica", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.helve-bold-italic {
+  font-family: "Helvetica", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link.active {
+  color: #4169e1 !important;
+  outline: none !important;
+}
+.nav-item {
+  padding-right: 20px;
+}
+.nav-item :hover {
+  text-decoration-color: #4169e1;
+  color: #4169e1;
+}
+.navbar-nav .nav-link.dropdown-toggle {
+  width: auto;
+  padding-right: 1rem; /* Ajusta el espaciado derecho según sea necesario */
+}
+/* Para asegurar que el dropdown tenga el mismo tamaño que el enlace */
+.dropdown-menu {
+  min-width: calc(100% - 2rem); /* Ajusta el valor según sea necesario */
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.principal-img{ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw; 
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-caption{
+  margin-left: -15%;
+  margin-bottom: -1.5%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Carousel*/
+.img-carousel{
+  height: 85vh;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+/*Texto Carousel*/
+.texto-Grande{
+  color: white;
+  font-size: 4.9em;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 60px;
+}
+/*Texto carousel despues del br*/
+.texto-Grande2{
+  color: white;
+  font-size: 4.9em;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+/*Texto carousel subtitulo*/
+.texto-subtitulo{
+  color:white;
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -2%;
+}
+/*Texto carousel subtitulo despues del br*/
+.texto-subtitulo2{
+  color:white;
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -1.5%;
+}
+
+
+/*button carousel*/
+.button-carousel{
+  color: black;
+  background-color: wheat;
+  text-align: center;
+  margin-left: -45.4%;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  border: solid black 2px;
+}
+/*Button text*/
+.button-text{
+  padding-top: 5px;
+  color: blue;
+  font-weight: 700;
+}
+
+/*Flechas carousel next*/
+.carousel-control-next{
+  width: 50px;
+  height: 50px;
+  text-align: right;
+  margin-top: 18.1%;
+}
+/*Flechas carousel prev*/
+.carousel-control-prev{
+  width: 50px;
+  height: 50px;
+  text-align: right;
+  margin-top: 18.1%;
+}
+
+.cargar-mas{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.principal-img::before {
+  content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
+  position: absolute; /* Para superponer el pseudo-elemento al fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+.titulo-principal {
+    position: relative;
+    z-index: 1; /* Colocar el texto por encima del fondo oscuro */
+    color: white;/* Alinear el texto al centro */
+    margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
+    font-size: 3.5em; /* Tamaño del texto */
+  position: relative;
+  z-index: 1; /* Colocar el texto por encima del fondo oscuro */
+  color: white;
+  text-align: start; /* Alinear el texto al centro */
+  margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
+  padding-left: 10%; /* Añadir espacio superior para el texto */
+  font-size: 4.9em; /* Tamaño del texto */
+}
+
+
+.titulos {
+  margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
+  padding-top: 4%; /* Añadir espacio superior para el texto */
+  padding-bottom: 2%;
+  font-size: 3em; /* Tamaño del texto */
+}
+
+.gretting-section{
+    padding-top: 80px;
+}
+
+.intro-info{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen-container {
+    position: relative;
+    width: 32%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.5s ease; /* Transición suave para el filtro de la imagen */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Superposición oscura con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+.overlay-text {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.imagen-container:hover .overlay {
+  opacity: 1; /* Mostrar superposición cuando se pasa el mouse sobre el contenedor de la imagen */
+}
+
+.imagen-container:hover img {
+  transform: scale(
+    1.1
+  ); /* Hacer un pequeño zoom en la imagen al pasar el mouse sobre ella */
+}
+
+footer {
+  padding-top: 80px;
+}
+
+footer p{
+    margin-bottom: 3rem;
+}
+
+footer h5{
+    font-size: 24px ;
+}
+
+time, i{
+    color: gray;
+}
+
+.campo-form{
+    height: 50px;
+    font-size: large;
+}
+
+/* SACARLE LAS FLECHAS AL INPUT DE TIPO NUMERO */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* ------------------------------------ */
+
+.btn-formulario{
+    width: 600px; 
+    height: 50px; 
+    font-size: 25px; 
+    background-color: #4169e1;
+}
+
+.cardP{
+  width: 300px;
+  height: 300px;
+}
